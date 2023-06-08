@@ -1,0 +1,147 @@
+p{
+  font-size: 13px;
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+  background: linear-gradient(to right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 30;
+}
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px 20px 0px;
+  background-color: white;
+  width: 700px;
+  padding: 40px 50px 40px 0px;
+  border-radius: 20px;
+}
+.left{
+  display: flex;
+  margin-right: 70px;
+}
+
+.left1{
+  display: none;
+}
+.bg-ill{
+  height: 608px;
+  position: absolute;
+  margin: -233px 0px 0px -348px;
+  z-index: 20;
+}
+.box{
+  height: 130px;
+  position: absolute;
+  margin: 62px 0px 0px -106px;
+  z-index: 30;
+}
+.bg-img{
+  height: 280px;
+  margin: -36px -16px -25px -90px;
+  z-index: 20;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.question{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: hsla(240, 27%, 17%, 0.726);
+  padding: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+.comment{
+  display: none;
+  color: hsl(240, 6%, 50%);
+  font-size: 12px;
+}
+.open .comment{
+  display: block;
+}
+.top1{
+  display: flex;
+  justify-content: space-between;
+  color: hsl(237, 12%, 33%);
+}
+.top1-1{
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.top1-1:hover{
+  color: hsl(14, 88%, 65%);
+}
+.faq{
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.arrow{
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+}
+.arrow1{
+  width: 11px;
+  height: 8px;
+  cursor: pointer;
+}
+.bolden-question{
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+
+
+@media (max-width: 375px){
+  .page{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    margin: 120px 0px 20px 0px;
+    padding: 0;
+  }
+  .left{
+    display: none;
+  }
+  .left1{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .bg-img{
+    height: 170px;
+    margin: -105px 0px 0px 0px;
+  }
+  .bg-ill{
+    height: 100px;
+    margin: 0px;
+  }
+  .right{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .top1{
+    width: 260px;
+  }
+  .top1-1{
+    font-size: 14px;
+  }
+  .faq{
+    margin: 0px 0px 30px 0px;
+  }
+  .question{
+    width: 80%;
+  }
+  .bolden-question{
+    font-size: 14px;
+  }
+}
